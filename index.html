@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slider {
+        width: 85%;
+        padding: 0 16px;
+        overflow: hidden;
+        background-color: #457b9d;
+        border-radius: 16px;
+        margin: 80px auto 0px auto;
+        box-shadow: 0px 0px 8px #000;
+        background-image: linear-gradient(
+          to top,
+          #1d3557 20%,
+          #457b9d,
+          #a8dadc
+        );
+      }
+
+      .slider > h2 {
+        font: 550 19px "Bruno Ace", cursive, "Gill Sans", "Gill Sans MT",
+          sans-serif;
+        color: #000;
+        text-align: center;
+        margin: 28px 0;
+      }
+
+      .slider .sliderContainer {
+        width: 100%;
+        float: left;
+        transition: margin 400ms linear;
+      }
+
+      .slider .item {
+        height: max-content;
+        background-color: #a8dadc;
+        float: left;
+        border-radius: 50% 50% 50% 50% / 17% 17% 83% 83%;
+        background-image: linear-gradient(
+          to bottom,
+          #1d3557 10%,
+          #457b9d,
+          #a8dadc
+        );
+      }
+
+      .slider .item a {
+        text-decoration: none;
+      }
+
+      .slider .item > a > h2 {
+        color: #fff;
+        text-align: center;
+        margin: 8px;
+        padding: 13% 0;
+        font: 300 13.5px "Bruno Ace", cursive, "Gill Sans", "Gill Sans MT",
+          sans-serif;
+      }
+
+      .slider .controls {
+        width: 100%;
+        float: left;
+        padding: 5px;
+        text-align: center;
+        margin-top: 24px;
+      }
+
+      .slider .controls button {
+        background-color: transparent;
+        border: none;
+        margin: 16px 4px;
+        cursor: pointer;
+      }
+
+      .slider .controls button img {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="design"></div>
+      <h2>Leistungen</h2>
+
+      <div class="sliderContainer">
+        <div class="item">
+          <a href="./webanalyse.html">
+            <h2>Web Analyse</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="./seo.html" target="_blank">
+            <h2>SEO</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="./sea.html" target="_blank">
+            <h2>SEA</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <h2>Web Design</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <h2>Webentwickler</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <h2>Soziale Medien</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <h2>Content Marketing</h2>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <h2>E-Mail Marketing</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="prevButton"><img src="./prev.webp" alt="prev" /></button>
+        <button class="nextButton"><img src="./next.webp" alt="next" /></button>
+      </div>
+    </div>
+    <script src="./main.js"> </script>
+  </body>
+</html>
